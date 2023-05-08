@@ -1,3 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #abc;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.timeline-container {
+    display: flex;
+}
+
+.timeline-line {
+    min-width: 10px;
+    /* width: 20px; */
+    margin: 0 20px;
+    margin-top: 15px;
+    /* height: 100px; */
+    align-self: stretch;
+    border: 1px solid black;
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.message {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.message::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: -37px;
+    background-color: #fff;
+}
+
+.message-text {
+    margin-right: 70px;
+    margin-bottom: 10px;
+}
+
+.message-timestamp {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 12px;
+}
+
+.textinput {
+    width: 100%;
+}
+
+.textinput-area {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
 }
