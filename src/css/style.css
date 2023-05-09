@@ -74,3 +74,23 @@ body {
     border-radius: 5px;
     font-size: 14px;
 }
+
+.alert-message-container {
+    /* display: none; */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.alert-message {
+    width: 550px;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+}
